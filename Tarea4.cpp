@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
-
+#include <string.h>
 using namespace std;
 int main() {
 
@@ -13,7 +13,8 @@ int main() {
 	 int cantidadTiquetes[3];
      int i=0;
     float montoUnitario[3], montoVenta[3], descuento[3], subtotal[3], impuesto[3] ,totalPagar[3];
-    char   nombre[3];
+    string  nombre[3];
+   
     
      system ("color f5");
     system ("cls");
@@ -36,8 +37,10 @@ int main() {
          
         // Calcular montos
         if (tipoTiquete[i] == 1) {
+        
             montoUnitario[i] = 6000;
         } else if (tipoTiquete[i] == 2) {
+        	
             montoUnitario[i] = 12000;
             
       }else {
@@ -66,7 +69,7 @@ int main() {
         cout <<"Cedula: " <<cedula[indice] <<endl;
         cout <<"Nombre: "  << nombre[indice]<< endl;
         cout <<"Tipo de cliente: " <<tipoCliente[indice]<< endl;
-        cout <<"Tipo de tiquete:" <<tipoTiquete[i] << endl;
+        cout <<"Tipo de tiquete:" <<tipoTiquete[indice]<< endl;
         cout <<"Cantidad de tiquetes:" <<cantidadTiquetes[indice]<< endl;
         cout <<"Monto unitario por tiquete: " <<montoUnitario[indice]<< endl;
         cout <<"Monto de venta: " <<montoVenta[indice]<< endl;
